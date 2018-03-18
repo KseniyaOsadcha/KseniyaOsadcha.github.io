@@ -1,0 +1,87 @@
+%btn {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  color: white;
+  background: transparent;
+  padding: 1.5rem 3rem;
+  border: 2px solid white;
+  width: auto;
+  border-radius: 4rem;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  display: inline-block;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+
+  @media (max-width: $screen-xs){
+    width: 100%;
+  }
+
+}
+
+.btn-prime {
+  @extend %btn;
+  background: $prime;
+  border: 2px solid $prime;
+
+  &:hover {
+    background: $primeShade;
+  }
+}
+
+.btn-second {
+  @extend %btn;
+  background: $second;
+  border: 2px solid $second;
+
+  &:hover {
+    background: $secondShade;
+  }
+}
+
+
+.btn-outline {
+  @extend %btn;
+
+  &:hover {
+    background: #fff;
+    color: #000;
+  }
+}
+.btn-why-me-violet{
+  color: rgb(86, 11, 109);
+  border: 2px solid rgb(113, 38, 136);
+  &:hover {
+    transition: 500ms;
+    background: linear-gradient(to top left, rgb(226, 99, 99), rgb(216, 70, 155), rgb(150, 47, 175), rgb(104, 34, 218));
+    color: #fff;
+  }
+}
+.btn-why-me-orange{
+  color: rgb(170, 93, 42);
+  border: 2px solid rgb(173, 68, 6);
+  &:hover {
+    transition: 500ms;
+    background: linear-gradient(to top left, rgb(252, 255, 81), rgb(243, 145, 66), rgb(235, 112, 41), rgb(233, 103, 98));
+    color: #fff;
+  }
+}
+.btn-why-me-violet, .btn-why-me-orange {
+  background: transparent;
+  padding: 1.5rem 3rem;
+  border-radius: 4rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+
+  
+}
+.btn-small {
+  padding: 1rem 2rem;
+  font-size: 1.3rem;
+}
+
+.btn-large {
+  padding: 1.9rem 5.1rem;
+}

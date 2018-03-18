@@ -1,0 +1,32 @@
+{
+  "name": "myportfolio",
+  "version": "1.0.0",
+  "description": "Diploma progect",
+  "main": "index.js",
+  "dependencies": {
+    "gulp": "^3.9.1"
+  },
+  "devDependencies": {
+    "bootstrap-sass": "^3.3.7",
+    "browser-sync": "^2.23.6",
+    "del": "^3.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^3.1.0",
+    "gulp-size": "^3.0.0",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-uglify": "^3.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KseniyaOsadcha/myportfolio.git"
+  },
+  "author": "Kseniya",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KseniyaOsadcha/myportfolio/issues"
+  },
+  "homepage": "https://github.com/KseniyaOsadcha/myportfolio#readme"
+}
