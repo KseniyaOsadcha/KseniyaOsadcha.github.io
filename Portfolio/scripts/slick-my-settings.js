@@ -3,7 +3,7 @@ $(document).ready(function(){
   $('.responsive').slick({
     dots: true,
     autoplay: true,
-    speed: 300,
+    speed: 150,
     slidesToShow: 4,
     slidesToScroll: 4,
     responsive: [

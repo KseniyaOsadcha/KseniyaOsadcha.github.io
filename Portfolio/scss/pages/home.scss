@@ -152,6 +152,11 @@ section {
     background: url("../../img/me.jpg") no-repeat center center;
     background-size: 30rem 20rem;
   }
+  p{
+    @media (max-width: $screen-xs){
+      font-size: 2rem;
+    }
+  }
 }
 .why-me-section{
   .w-m-box{
@@ -214,7 +219,7 @@ section {
     .icon-circle{
       width: 8rem;
       height: 8rem;
-      margin-left: 10%;
+      margin-left: 5%;
     }
     .w-icon{
       font-size: 3em;
@@ -223,6 +228,7 @@ section {
     }
     p{
       left: 35%;
+      font-size: 2rem;
     }
     .h2{
       font-size: 3rem;
@@ -368,7 +374,6 @@ section {
     color: $secondShade;
     font-size: 2.6rem;
     width: 23.2rem;
-    border-bottom: $secondShade solid 0.1rem; 
   }
 }
 footer{
