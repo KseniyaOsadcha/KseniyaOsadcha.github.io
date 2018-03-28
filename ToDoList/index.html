@@ -11,7 +11,7 @@
 </head>
 <body>
     <div id="page-preloader"><h3 class="spinner"></h3></div>
-    <div id="root"></div>
+   <div id="root"></div>
     <script
           src="https://code.jquery.com/jquery-2.2.4.min.js"
           integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
@@ -198,8 +198,8 @@ const EditTask = ({editTodo, data, index, display}) => {
           }} placeholder={index == -1? "Time": data[index].time} className ="time" />
           <p className="inline error-message" id="edit-time-error"></p>
         </div>
-        <div className="edit-prior">
-          <p className="text-prior">Priority:</p>
+        <div className="add-prior">
+          <p>Priority:</p>
             <select ref={node => {
               inputPrior = node;
             }} >
@@ -207,8 +207,8 @@ const EditTask = ({editTodo, data, index, display}) => {
               <option id="option-middle" value="middle">Middle</option>
               <option id="option-hight"  value="hight">Hight</option>            
             </select>
-            <p  className="inline error-message" id="edit-prior-error"></p>   
-        </div>         
+        </div>    
+        <p  className="inline error-message" id="edit-prior-error"></p>   
         <div className="btn-add" onClick={() => {
           editTodo(inputTask.value, inputTime.value, index, inputPrior.value);
           }}>
