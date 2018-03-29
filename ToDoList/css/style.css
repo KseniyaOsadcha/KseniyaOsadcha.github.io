@@ -136,11 +136,14 @@ span::before{
 }
 
 .todo-title{
-    text-align: center;
-    font-size: 1.6rem;
+    
+    font-size: 1.8rem;
     padding-top: 3rem; 
+    max-width: 90%;
+    margin-left: 5%; 
+    word-wrap: break-word;
+    text-align: center;
     padding-bottom: 1rem; 
-    max-width: 44rem;
     font-family: 'Satisfy', cursive;
 }
 
@@ -374,22 +377,24 @@ option{
         font-size: 0.8rem;
     }
     .todo-title{
-        font-size: 1rem;
-        padding-top: 1.6rem; 
-        max-width: 27rem;
+        font-size: 1.6rem;
+        padding-top: 2.8rem; 
+        max-width: 90%;
+        margin-left: 5%; 
+        word-wrap: break-word;
     }
     .todo-time{
-        top: 0.5rem;
-        left: 1rem;
-        font-size: 0.8rem;
+        top: 6%;
+        left: 6%;
+        font-size: 1.2rem;
     }    
     .icons{
-        right: 1rem;
-        top: 0.4rem;
+        right: 5%;
+        top: 5%;
     }
     .ic-todo {
-        font-size: 0.7rem;
-        margin-right: 0.3rem;
+        font-size: 1rem;
+        margin-right: 0.7rem;
     }
     /*add new task*/
     .btn-add{
@@ -442,20 +447,24 @@ option{
     margin: -40px 0 0 -30px;
 }
 @media (max-width: 490px){
+    body{
+        background: rgba(255, 240, 240, 0.87);
+        margin: 0 auto;
+    }
     .title{
-        width: 15rem;
-        margin-top: 2rem;
+        width: 100%;
+        margin-top: 0rem;
     }
     .todo-numb{
-        font-size: 0.5rem;
+        font-size: 0.8rem;
     }
     .title-time{
         margin-top: 1.6rem;
-        font-size: 1.5rem;
+        font-size: 1.8rem;
         margin-bottom: 0.6rem;        
     }
     .title-date{
-        font-size: 1rem;
+        font-size: 1.4rem;
     }
     .icon-setting{
         font-size: 1rem;
@@ -463,9 +472,7 @@ option{
         top: 0.5rem;
     }
     .menu{
-        width: 15.1rem;
-    padding-top: 0.2rem;
-    padding-bottom:0.2rem;
+        width: 100%;
     }
     .menu-ul{
         font-size: 1rem;
@@ -485,69 +492,83 @@ option{
     
     /*task list*/
     .tasks{
-        width: 15rem;
+        width: 100%;
         min-height: 10rem;
+        background: none;
     }
     .guide{
         top: 1rem;
         left: 1rem;
-        max-width: 13rem;
+        max-width: 90%;
         font-size: 0.8rem;
         margin-bottom: 1rem; 
     }
     .todo-title{
-        font-size: 0.6rem;
-        padding-top: 1.5rem; 
-        padding-left: 0.2rem; 
+        font-size: 1.4rem;
+        padding-top: 2rem; 
+        margin-left: 5%; 
         padding-bottom: 0.5rem; 
+        word-wrap: break-word;
+        max-width: 90%;
     }
     .todo-time{
-        top: 0.5rem;
-        left: 0.4rem;
-        font-size: 0.6rem;
+        top: 5%;
+        left: 5%;
+        font-size: 1rem;
     }    
     .icons{
-        right: 0.3rem;
-        top: 0.1rem;
+        right: 4%;
+        top: 4%;
     }
     .ic-todo {
-        font-size: 0.4rem;
-        margin-right: 0.2rem;
+        font-size: 0.8rem;
+        margin-right: 0.5rem;
     }
-    /*add new task*/
+    /*add new task*/ 
+    .add-tasks{
+        width: 100%;
+        padding-bottom: 2rem; 
+        background: none;
+    }
     .btn-add{
         font-size: 15px;
-    width: 6rem;
-        
+        width: 50%;
     }
     /*input form*/
     .bl_form input {
         font-size: 10px;
         margin-top: 1rem;
-        margin-left: 2.5rem;
+        background: linear-gradient(to bottom right, rgb(127, 200, 248),rgb(42, 31, 138), rgb(89, 25, 126), rgb(42, 31, 138), rgb(18, 2, 75));
+        box-shadow: 0 2px 8px rgb(7, 49, 97);
+        color: rgb(238, 203, 203);
+        margin-left: 10%;
+        padding-right: 5%;
     }  
-    .add-tasks{
-        width: 15rem;
-        padding-bottom: 2rem; 
-    }
+   
     .add-tasks h1{
         padding-top: 1.2rem;
-        width: 10rem;
+        width: 70%;
         font-size: 1rem;
         padding-bottom: 1rem;
+        color: #070049;
+        border-color:  #070049;
+        
     } 
     /*select priority*/
     .add-prior{
-        margin-left: 2.5rem;
+        margin-left: 10%;
         margin-bottom: 2rem;
     }
     .add-prior p{
         font-size: 0.8rem;
-        margin-left: 2.5rem;
+        margin-left: 13%;
+        color: #070049;
+        font-weight: bold;
     }
     select{
+        background: linear-gradient(to bottom right, rgb(127, 200, 248),rgb(42, 31, 138), rgb(89, 25, 126), rgb(42, 31, 138), rgb(18, 2, 75));
         font-size: 0.6rem;
-        padding-left: 2.5rem; 
+        padding-left: 5%;
         width: 9.5rem;
     }
     option{
@@ -555,11 +576,10 @@ option{
     }
     /*error message*/
     .error-message{
-        font-size: 0.6rem;
-        margin-left: 2.5rem;
-        margin-right: 2.5rem;
-    box-shadow: 0 2px 3px rgba(137, 181, 231, 0.945);
-        
+        font-size: 0.8rem;
+        color: #ff5c47;
+        margin-left: 10%;
+        margin-right: 10%;
+        box-shadow: 0 2px 3px #ff705d;
     }
-   
 }
