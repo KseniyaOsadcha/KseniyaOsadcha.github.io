@@ -11,8 +11,16 @@
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>   
 </head>
 <body>
-
-
+    <div class="overlay_popup"></div>
+		<div class="popup" id="popup1">
+			<div class="object">
+				<p>Hi!</p>
+				<p>If you have any questions, write here:</p>
+				<a href="https://plus.google.com/u/0/113137287161539696720"><p class="h3">theksenic@gmail.com</p></a>
+                <br>
+                <div class="btn-second _close_popup" rel="popup1" data-toggle="modal" data-target="#close">Close</div>
+            </div>
+		</div>
     <section class="hero bg-black rel">
             <header class="fixed bg-third">
                 <div class="fix-menu wrap">
@@ -47,7 +55,7 @@
                             </div>
                             <div class="col-xs-12 col-md-6">
                                 <div class="text-left mobile-text-center">
-                                    <div class="btn-second btn-large" data-toggle="modal" data-target="#contactMe">contact me</div>
+                                    <div class="btn-second btn-large _show_popup" rel="popup1" data-toggle="modal" data-target="#contactMe">contact me</div>
                                 </div>
                             </div>
                         </div>
@@ -267,6 +275,7 @@
 
 <script src="node_modules/bootstrap-sass/assets/javascripts/bootstrap/modal.js"></script>
 <!--<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>-->
+<script src="http://code.jquery.com/jquery-latest.js"></script>
 <script type="text/javascript" src="slick/slick.min.js"></script>
 <script src="./js/build.js"></script>
 </body>

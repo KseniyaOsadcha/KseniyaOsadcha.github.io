@@ -1,7 +1,45 @@
 // global styles
 @import "../global";
 
-// home page style
+.overlay_popup {
+  display:none;
+  position:fixed;
+  z-index: 1000;
+  top:0;
+  right:0; 
+  left:0;
+  bottom:0;
+  background:#000; 
+  opacity:0.5;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  z-index: 10000;
+  margin: 15% 25% 0 25%;
+  width:50%;
+  font-family: arial;
+  @media (max-width: $screen-sm){
+    margin: 15% 25% 0 25%;
+  }
+  @media (max-width: $screen-xs){
+    margin: 25% 5% 0 5%;
+    width:90%;
+  }
+}
+.object{
+  text-align: center;
+    width: 90%;
+    height: 300px;
+    background-color: #eee;
+    padding: 50px 10px;
+    border: 1px solid #55acee;
+    border-radius: 9px;
+    @media (max-width: $screen-sm){
+      width: 100%;
+    }
+}
 
 .hero {
   border-bottom: 10px solid $prime;
@@ -114,6 +152,7 @@
       margin-bottom: 3rem;
     }
   }
+  
 }
 
 section {
