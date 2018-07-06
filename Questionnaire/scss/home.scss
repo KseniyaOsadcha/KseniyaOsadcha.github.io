@@ -1,0 +1,291 @@
+@import "variables";
+//для 3 4 и 5 секций
+%icons{
+    width: 45px;
+    height: 45px;
+}
+%section{
+    text-align: center;
+    padding-top: $containerVerIndent;
+}
+@mixin placeholder {
+    &::-webkit-input-placeholder { @content; }
+    &:-moz-placeholder           { @content; }
+    &::-moz-placeholder          { @content; }
+    &:-ms-input-placeholder      { @content; }  
+  }
+  body{
+    font-family: 'Roboto', sans-serif;
+  }
+.wrap{
+    margin: 0 auto;
+    max-width: $mainContainer;
+    padding-left: $containerHorIndent;
+    padding-right: $containerHorIndent;
+    @media (max-width: 720px){
+        padding-left: $containerHorIndentMobile;
+        padding-right: $containerHorIndentMobile;
+      }
+      // для 3 4 и 5 секции
+    .text{
+      font-size: 30px;
+      font-weight: 300;
+      margin-top: 15px;
+    }
+}
+
+// 1-вая секция,  меню
+.navigate{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 14px;
+    a{
+        color: $darkGray;
+    }
+    a:hover, a:active{
+        transition: 200ms;
+        color: $blue;
+    }
+}
+.nav-item{
+    text-transform: uppercase;
+}
+// 2-рая секция 
+.bg-photo{
+    background: url('../img/bg-photo.jpg') no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    height: 180px;
+    position: relative;
+    overflow: hidden;
+    .blurring{
+        height: 25px; 
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: $white;
+        box-shadow: 0px -10px 70px 35px $white;
+        .text{
+            position: absolute;
+            top: -60px;
+            left: 0;
+            right: 0;
+            color: $black;
+            font-size: 70px;
+            text-align: center;
+            font-weight: 100;
+        } 
+    }
+}
+// 3-тяя секция 
+.section-person{ 
+    .icon{
+        @extend %icons;
+        background: url("../img/icon1.png");
+        background-size: cover;
+    }
+    @extend %section;
+    .my-sell{
+        margin-top: 20px; 
+    }
+    #year{
+        font-size: 16.5px;
+        border: 1px solid $darkGrayOpas;
+        border-radius: 5px; 
+        border-right: none;
+        display: inline-block;
+        margin: 0 auto;
+        text-align: center;
+        width: 310px;
+        padding: 10px;
+        opacity: 0.5;
+    }
+    #up{
+        font-size: 12.5px;
+        color: $darkBlue3;
+        padding: 10px;
+        padding-top: 14px;
+        border: 1px solid $darkGrayOpas;
+        border-radius: 5px; 
+        border-left: none;display: none;
+        cursor: pointer;
+    }
+    #down{
+        font-size: 12.5px;
+        color: $darkBlue3;
+        padding: 10px;
+        padding-top: 14px;
+        border: 1px solid $darkGrayOpas;
+        border-radius: 5px; 
+        border-left: none;
+        display: inline-block;
+        cursor: pointer;
+    }
+    #bloc {
+        display: none;
+        vertical-align: top;
+        overflow: hidden;
+        border: solid grey 1px;
+        border: 1px solid $darkGrayOpas;
+        border-radius: 5px; 
+      }
+      #bloc select {
+        padding: 7px 150px 7px 150px;
+        font-size: 18px;
+        margin: -5px -20px -5px -5px;
+      }
+    
+    .text{
+        margin-bottom: 40px;
+      }
+    .form-control{
+        text-align: center;
+        width: 510px;
+        height: 55px;
+        font-size: 16px;
+        font-weight: 600;
+        color: $black;
+        margin-top: 20px;
+        @media (max-width: 720px){
+            width: 340px;
+          }
+        @include placeholder {
+            opacity: 0.5;
+            text-indent: 0px;
+            transition: text-indent 300ms;
+          }
+        &:focus{
+            border-color: $darkBlue;
+            box-shadow: none;
+            @include placeholder {
+              text-indent: -700px;
+            }
+        }
+    }
+    .container-form{
+        width: 510px;
+        position: relative;
+        margin: 0 auto;
+        @media (max-width: 720px){
+            width: 340px;
+          }
+    }
+    .label{
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 48%;
+        bottom: 0;
+        color: $black;
+        font-size: 11px;
+        opacity: 0.5;
+    }
+    #lbl3{
+        left: 41%;
+        @media (max-width: 720px){
+            left: 38%;
+          }
+    }
+}
+// 4-тая секция 
+.section-exp{
+    @extend %section;
+    .icon{
+        background: url("../img/icon2.png");
+        background-size: cover;
+        @extend %icons;
+    }
+    .custom-control{
+        text-align: left;
+        margin-bottom: 5px; 
+        cursor: pointer;
+        @media (max-width: 770px){
+            margin-left: 30%; 
+        }
+    }
+    
+input[type=checkbox] {display: none;}
+
+input[type=checkbox] + label:before {
+    content: "\2713";
+    color: transparent;
+    display: inline-block;
+    border: 1px solid $darkBlue3;
+    border-radius: 4px; 
+    font-size: 20px;    
+    line-height: 22px;
+    margin: -5px 5px 0 0;
+    height: 20px;
+    width: 20px;
+    text-align: center;
+    vertical-align: middle;
+    transition: color ease .3s;
+    cursor: pointer;
+}
+label{
+    cursor: pointer;
+}
+input[type=checkbox]:checked + label:before {
+    background: $darkBlue3;   
+    color: $white;
+}
+
+    .text{
+        margin-bottom: 40px;
+      }
+}
+// 5-тая секция 
+
+.section-abaut{
+    @extend %section;
+    .icon{
+        @extend %icons;
+        background: url("../img/icon3.png");
+        background-size: cover;
+    }
+    .text{
+        margin-bottom:10px;
+      }
+    .text2{
+        margin: 0 auto;
+        max-width: 500px;
+    }
+    textarea {
+        resize:none;
+        width: 480px;
+        margin: 0 auto;
+        margin-top: 30px;
+        margin-bottom: 55px;
+        @media (max-width: 720px){
+            width: 340px;
+          }
+        @include placeholder {
+            opacity: 0.5;
+            font-size: 18px;
+            text-indent: 0px;
+            transition: text-indent 400ms;
+          }
+        &:focus{
+            border-color: $darkBlue;
+            box-shadow: none;
+            @include placeholder {
+              text-indent: -700px;
+            }
+        }
+    }
+    .btn-primary{
+        background: $darkBlue2;
+        border-color: $darkBlue2;
+        border-radius: 10px; 
+        opacity: 0.9;
+        font-size: 16px;
+        margin-bottom: 60px;
+        &:hover, &:focus, &:active{
+            box-shadow: none;
+            outline: 0px;
+            background: $darkBlue3;
+            border-color: $darkBlue3;
+        }
+    }
+}

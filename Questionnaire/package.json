@@ -1,0 +1,29 @@
+{
+  "name": "questionnaire",
+  "version": "1.0.0",
+  "description": "Test task",
+  "main": "index.js",
+  "dependencies": {
+    "gulp-sass": "^4.0.1"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.24.5",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-uglify": "^3.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KseniyaOsadcha/Questionnaire.git"
+  },
+  "author": "Kseniya",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KseniyaOsadcha/Questionnaire/issues"
+  },
+  "homepage": "https://github.com/KseniyaOsadcha/Questionnaire#readme"
+}

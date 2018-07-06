@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/home.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+<body>
+  <section class="wrap">
+    <nav class="navigate">
+      <ul class="nav justify-content-center">
+          <li class="nav-item">
+            <a class="nav-link active" href="#ls">личная информация</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#exp">опыт</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#ab">о себе</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </section>
+  <section>
+    <div class="bg-photo">
+      <div class="blurring">
+        <div class="text">Анкета</div>
+      </div>
+    </div>
+  </section>
+  <section class="wrap section-person">
+    <div class="icon mx-auto"></div>
+    <div class="text" id="ls">Личная информация</div>
+    <div class="container-form">
+        <input type="text" class="form-control mx-auto form" onfocus="getProp(0)"  onblur="deleteProp(0)" placeholder="ФИО">
+        <p class="label">ФИО</p>
+    </div>
+    <div class="my-sell">
+        <input type="text" readonly value="Год рождения" id="year">
+        <div onclick="Down()" id="up"> <i class="fas fa-chevron-up"></i> </div>
+        <div onclick="Up()" id="down"><i class="fas fa-chevron-down"></i> </div>
+    </div>
+        <div id="bloc">
+            <select name="year" size="7" id="mysel"></select>
+        </div>
+    
+<div class="container-form">
+            <input type="text" class="form-control mx-auto form" onfocus="getProp(1)"  onblur="deleteProp(1)" placeholder="Место проживания">
+            <p class="label"  id="lbl3">Место проживания</p>
+    </div>
+    <div class="container-form">
+            <input type="text" class="form-control mx-auto form" onfocus="getProp(2)"  onblur="deleteProp(2)" placeholder="Skype">
+            <p class="label">Skype</p>
+    </div>
+    <div class="container-form">
+            <input type="email" class="form-control mx-auto form" aria-describedby="emailHelp" onfocus="getProp(3)"  onblur="deleteProp(3)" placeholder="E-mail">
+            <p class="label">E-mail</p>
+    </div>
+  </section>
+  <section class="wrap section-exp">
+      <div class="icon mx-auto"></div>
+      <div class="text" id="exp">Расскажите о своем опыте</div>
+      <div class="container">
+          <div class="row">
+            <div class="col-md-2 col-xs-12"></div>
+            <div class="col-md-3 col-xs-12">
+                <div class="custom-control custom-checkbox">
+                        <input type="checkbox" id="check1" name="check">
+                        <label for="check1">БЭМ/ООCSS</label>
+                </div>   
+                <div class="custom-control custom-checkbox">
+                        <input type="checkbox" id="check2" name="check">
+                        <label for="check2">Stylus/LESS/SASS</label>
+                </div> 
+                <div class="custom-control custom-checkbox">
+                        <input type="checkbox" id="check3" name="check">
+                        <label for="check3">Работаю с SVG</label>
+                </div> 
+            </div>
+            <div class="col-md-3 col-xs-12">
+                <div class="custom-control custom-checkbox">
+                        <input type="checkbox" id="check4" name="check">
+                        <label for="check4">Верстаю семантично</label>
+                </div>   
+                <div class="custom-control custom-checkbox">
+                        <input type="checkbox" id="check5" name="check">
+                        <label for="check5">ES2015</label>
+                </div> 
+                <div class="custom-control custom-checkbox">
+                        <input type="checkbox" id="check6" name="check">
+                        <label for="check6">Gulp/GRUNT</label>
+                </div>             </div>
+            <div class="col-md-3 col-xs-12">
+                <div class="custom-control custom-checkbox">
+                        <input type="checkbox" id="check7" name="check">
+                        <label for="check7">Webpack</label>
+                </div>   
+                <div class="custom-control custom-checkbox">
+                        <input type="checkbox" id="check8" name="check">
+                        <label for="check8">jQuery</label>
+                </div> 
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" id="check9" name="check">
+                    <label for="check9">Использую Git</label>
+                </div>          
+              </div>
+          </div>
+        </div>
+  </section>
+  <section class="wrap section-abaut">
+      <div class="icon mx-auto"></div>
+      <div class="text" id="ab">Расскажите о себе</div>
+      <div class="text2">
+         Напишите несколько предложений, чем привлекла наша вакансия и что вы ожидаете от нас
+      </div>
+      <textarea class="form-control" rows="7" placeholder="Понравилось тем, что..."></textarea>
+      <button type="submit" class="btn btn-lg btn-primary">Готово</button>
+
+    </section>
+    <script
+        src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+        crossorigin="anonymous"></script>
+    <script src="./js/build.js"></script>
+
+</body>
+</html>
