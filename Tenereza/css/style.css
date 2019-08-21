@@ -1,0 +1,206 @@
+.text-center{
+    text-align: center;
+}
+.custom-nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+.logo{
+    max-width: 200px;
+    width: 100%;
+}
+.katalog{
+    padding: 45px 0;
+    background: #2b2727;
+    color: #f7f6f6;
+}
+.katalog h2, .advantage h2{
+    margin-bottom: 45px; 
+}
+.katalog-img{
+    max-width: 400px;
+    width: 100%;
+}
+.custom-card{
+    margin: 5px 20px;
+}
+.advantage{
+    padding: 45px 0;
+    background: #eee;
+}
+.how-order {
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+    padding: 30px 0px;
+}
+.how-order h3 {
+    color: #000000;
+    font-family: font-title;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 31px;
+    text-transform: uppercase;
+    padding-bottom: 70px;
+}
+.how-order p {
+    text-align: center;
+    color: #000000;
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 25px;
+    padding-top: 20px;
+}
+.how-order img {
+    width: 85%}
+.how-order .text-after:after {
+    content: url("img/icons-how.png");
+    position: absolute;
+    right: -1px;
+    bottom: 179px;
+}
+
+.about-bl-1 {
+    padding: 50px 0px 80px 0px;
+    background: #f7f7f7;
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+}
+.about-bl-1 h3 {
+    color: #000000;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 60px;
+    font-family: font-title;
+    text-transform: uppercase;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.about-bl-1 p {
+    color: #000000;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px;
+}
+/* преимущества */
+.adv-list {
+    counter-reset: li;
+}
+.adv-list-item:nth-child(odd) {
+    margin-right: auto;
+    text-align: right;
+    padding-right: 70px;
+    border-right: solid 1px #000;
+}
+.adv-list-item {
+    width: 50%;
+    position: relative;
+    padding-bottom: 14px;
+}
+ .adv-list-item::before {
+    font-family: "Marmelad", sans-serif;
+    font-size: 24px;
+    font-weight: normal;
+    font-style: normal;
+    color: #fff;
+}
+ul, ol {
+    list-style: none;
+}
+ .adv-list-item:before {
+    background-color: #000;
+}
+.adv-list-item:nth-child(odd)::before {
+    right: -21px;
+}
+.adv-list-item:before {
+    content: counter(li);
+    counter-increment: li;
+    position: absolute;
+    top: -4px;
+    width: 41px;
+    height: 41px;
+    border-radius: 50%;
+    line-height: 41px;
+    text-align: center;
+}
+ .adv-list-text {
+    font-family: "Marmelad", sans-serif;
+    font-size: 23px;
+    line-height: 1.85;
+    font-weight: normal;
+    font-style: normal;
+    letter-spacing: 0.0em;
+    color: #000;
+}
+.adv-list-item:nth-child(even) {
+    margin-left: auto;
+    text-align: left;
+    padding-left: 70px;
+    border-left: solid 1px #000;
+}
+.adv-list-item:nth-child(even)::before {
+    left: -21px;
+}
+.adv-list-item:last-child {
+    border: none !important;
+    padding-bottom: 0 !important;
+}
+
+@media(max-width: 992px) {
+
+    .about-bl-1 {
+        padding: 50px 0px 50px 0px;
+        text-align: center;
+    }
+    .about-bl-1 h3 {
+        font-size: 30px;
+        padding-top: 0px;
+        padding-bottom: 15px;
+    }
+}
+/* преимущества */
+@media (max-width: 800px){
+    body:not(.bazium-no-resp) .adv-list {
+        padding-left: 50px;
+    }
+    body:not(.bazium-no-resp) .adv-list-item:nth-child(odd) {
+        margin: 0;
+        text-align: left;
+        padding-right: 0;
+        padding-left: 40px;
+        border-right: none;
+        border-left: solid 1px #000;
+    }
+    body:not(.bazium-no-resp) .adv-list-item {
+        width: 100%;
+    }
+    body:not(.bazium-no-resp) .adv-list-item:nth-child(odd)::before {
+        right: auto;
+        left: -21px;
+    }
+    body:not(.bazium-no-resp) .adv-list-item:nth-child(even) {
+        margin: 0;
+        padding-left: 40px;
+    }
+    body:not(.bazium-no-resp) .adv-list-item {
+        width: 100%;
+    }
+    }
+@media (max-width: 576px) {
+
+    .how-order .text-after:after {
+        display: none;
+    }
+    .how-order h3 {
+        padding-bottom: 20px;
+    }
+    .how-order img {
+        width: 45%;
+        margin-left: 26%;
+    }
+}
