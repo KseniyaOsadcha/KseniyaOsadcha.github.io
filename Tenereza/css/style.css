@@ -57,7 +57,7 @@
 .how-order img {
     width: 85%}
 .how-order .text-after:after {
-    content: url("img/icons-how.png");
+    content: url("../img/icons-how.png");
     position: absolute;
     right: -1px;
     bottom: 179px;
@@ -150,7 +150,47 @@ ul, ol {
     border: none !important;
     padding-bottom: 0 !important;
 }
-
+/* заявка низ */
+.main2{
+    background: url("../img/main2.png") center 30% no-repeat;
+    background-size: cover; 
+    padding: 100px 0;
+}
+.main2 .logo {
+    width: auto;
+    margin-top: 50px;
+}
+.main2 h2 {
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+.main2 h5:before {
+    display: none;
+}
+.main2 h5 {
+    font-size: 22px;
+    line-height: 26px;
+}
+.main2 h1 {
+    font-size: 59px;
+}
+.main2 .sale {
+    max-width: 362px;
+    width: 100%;
+}
+.main2 .forma {
+    /* margin: 0px 100px; */
+    margin-top: 30px;
+}
+.main2 .sale-box{
+    text-align: center;
+}
+.main2-form{
+    margin: 0 0 0 auto;
+    background: #ffffff6b;
+    border-radius: 11px;
+    margin-left: auto;
+}
 @media(max-width: 992px) {
 
     .about-bl-1 {
@@ -191,8 +231,13 @@ ul, ol {
         width: 100%;
     }
     }
+@media (max-width: 767px) {
+    .main2 .sale{
+        margin-left: 15%;
+    }
+}
 @media (max-width: 576px) {
-
+    
     .how-order .text-after:after {
         display: none;
     }
@@ -202,5 +247,10 @@ ul, ol {
     .how-order img {
         width: 45%;
         margin-left: 26%;
+    }
+}
+@media (max-width: 500px) {
+    .main2 .sale{
+        margin-left: 6%;
     }
 }
