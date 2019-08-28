@@ -1,6 +1,68 @@
 .text-center{
     text-align: center;
 }
+/* main */
+/* .main{
+    background-size: cover; 
+        font-family: "Open Sans", sans-serif;
+} */
+.main{
+    background: url('../img/bg-main.jpg') top right no-repeat;
+    /* background: url('../img/woman2.png') top right no-repeat; */
+
+    background-size: cover; 
+    font-family: "Open Sans", sans-serif;
+    overflow: hidden;
+    padding: 140px 0;
+    position: relative;
+}
+.phone-numb{
+    position: absolute;
+    right: 40px;
+    top: 20px;
+}
+#custom-nav {
+    overflow: hidden;
+    width: 100%;
+  }
+  a:hover{
+      text-decoration: none !important;
+      color: #eee ;
+
+  }
+.btn-main-call{
+    border: 3px solid #eee;
+    color: #eee;
+    padding: 10px;
+margin-left: 10px;
+}
+  .btn-main{
+      border: 3px solid #eee;
+    color: #eee;
+        padding: 15px;
+    font-size: 25px;
+  }
+  .btn-main:hover, .btn-main-call:hover{
+    border: 3px solid #eeeeee;
+    color: #2a2a28 !important;
+    background: #eee;
+    transition: 300ms;
+    cursor: pointer;
+}
+  .main div{
+  }
+  /* The sticky class is added to the navbar with JS when it reaches its scroll position */
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  
+  /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+  .sticky + .content {
+    padding-top: 100px;
+  }
 .custom-nav{
     position: fixed;
     top: 0;
@@ -11,6 +73,9 @@
     max-width: 200px;
     width: 100%;
 }
+textarea {
+    resize: none;
+  }
 .katalog{
     padding: 45px 0;
     background: #2b2727;
@@ -191,6 +256,42 @@ ul, ol {
     border-radius: 11px;
     margin-left: auto;
 }
+/* feedbacks */
+.feedback{
+    padding: 50px 0;
+    
+}
+.feedback .name{
+    font-size: 20px;
+    font-weight: 600;
+    padding-left: 25px;
+}
+.feedback-card{
+font-family: "Merriweather", serif;
+    font-size: 16px;
+   
+    margin-bottom: 20px;
+}
+.comment{
+    border-radius: 78px;
+    background: #f8f9fa;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #eee;
+}
+.feedback-card div{
+    margin-bottom: 8px;
+}
+.feedback-card:nth-child(even){
+    margin-left: auto;
+}
+.m-auto{
+    margin: 0 auto;
+}
+.btn-custom{
+    border-radius: 50px !important;
+}
+
 @media(max-width: 992px) {
 
     .about-bl-1 {
