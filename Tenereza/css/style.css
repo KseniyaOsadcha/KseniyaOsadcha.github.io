@@ -16,6 +16,12 @@
     padding: 140px 0;
     position: relative;
 }
+.main-strong{
+    font-size:80px;
+ }
+ .main-small{
+    font-size: 48px;
+ }
 .phone-numb{
     position: absolute;
     right: 40px;
@@ -70,7 +76,7 @@ margin-left: 10px;
     z-index: 1000;
 }
 .logo{
-    max-width: 200px;
+    max-width: 160px;
     width: 100%;
 }
 textarea {
@@ -336,6 +342,12 @@ font-family: "Merriweather", serif;
     .main2 .sale{
         margin-left: 15%;
     }
+    .main-strong{
+        font-size:50px;
+     }
+     .main-small{
+        font-size: 28px;
+     }
 }
 @media (max-width: 576px) {
     
